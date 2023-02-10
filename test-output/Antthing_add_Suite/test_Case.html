@@ -1,0 +1,482 @@
+<html>
+<head>
+<title>TestNG:  test_Case</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>test_Case</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/6/1</td>
+</tr><tr>
+<td>Started on:</td><td>Sat May 08 11:17:56 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>21 seconds (21632 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='besic_learing_testgn.Alwaysrun.Begin()'><b>Begin</b><br>Test class: besic_learing_testgn.Alwaysrun</td>
+<td><div><pre>java.lang.AssertionError: we are fail this task case
+	at besic_learing_testgn.Alwaysrun.Begin(Alwaysrun.java:14)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1215946669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1215946669'><pre>java.lang.AssertionError: we are fail this task case
+	at org.testng.Assert.fail(Assert.java:99)
+	at besic_learing_testgn.Alwaysrun.Begin(Alwaysrun.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>besic_learing_testgn.Alwaysrun@33c7e1bb</td></tr>
+<tr>
+<td title='besic_learing_testgn.Assertions.Criticals()'><b>Criticals</b><br>Test class: besic_learing_testgn.Assertions</td>
+<td><div><pre>java.lang.AssertionError: expected [We are learninh in English] but found [We are learing in englis and Hindi]
+	at besic_learing_testgn.Assertions.Criticals(Assertions.java:13)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace333034015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace333034015'><pre>java.lang.AssertionError: expected [We are learninh in English] but found [We are learing in englis and Hindi]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at besic_learing_testgn.Assertions.Criticals(Assertions.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>besic_learing_testgn.Assertions@34c4973</td></tr>
+<tr>
+<td title='besic_learing_testgn.HartAssert_Vs_SoftAssert.HartAssertLogic()'><b>HartAssertLogic</b><br>Test class: besic_learing_testgn.HartAssert_Vs_SoftAssert</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at besic_learing_testgn.HartAssert_Vs_SoftAssert.HartAssertLogic(HartAssert_Vs_SoftAssert.java:15)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace249177573", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace249177573'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at besic_learing_testgn.HartAssert_Vs_SoftAssert.HartAssertLogic(HartAssert_Vs_SoftAssert.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>besic_learing_testgn.HartAssert_Vs_SoftAssert@17d677df</td></tr>
+<tr>
+<td title='besic_learing_testgn.Assertions.Medium()'><b>Medium</b><br>Test class: besic_learing_testgn.Assertions</td>
+<td><div><pre>java.lang.AssertionError: Fail deliberately 
+	at besic_learing_testgn.Assertions.Medium(Assertions.java:27)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace319670866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace319670866'><pre>java.lang.AssertionError: Fail deliberately 
+	at org.testng.Assert.fail(Assert.java:99)
+	at besic_learing_testgn.Assertions.Medium(Assertions.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>besic_learing_testgn.Assertions@34c4973</td></tr>
+<tr>
+<td title='besic_learing_testgn.HartAssert_Vs_SoftAssert.SoftAssertLogic()'><b>SoftAssertLogic</b><br>Test class: besic_learing_testgn.HartAssert_Vs_SoftAssert</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at besic_learing_testgn.HartAssert_Vs_SoftAssert.SoftAssertLogic(HartAssert_Vs_SoftAssert.java:35)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1670993182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1670993182'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at besic_learing_testgn.HartAssert_Vs_SoftAssert.SoftAssertLogic(HartAssert_Vs_SoftAssert.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>besic_learing_testgn.HartAssert_Vs_SoftAssert@17d677df</td></tr>
+<tr>
+<td title='besic_learing_testgn.Soft_Assertions.Validation()'><b>Validation</b><br>Test class: besic_learing_testgn.Soft_Assertions</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	B2 is wrong string statement expected [true] but found [false]
+	at besic_learing_testgn.Soft_Assertions.Validation(Soft_Assertions.java:22)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace396485834", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace396485834'><pre>java.lang.AssertionError: The following asserts failed:
+	B2 is wrong string statement expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at besic_learing_testgn.Soft_Assertions.Validation(Soft_Assertions.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>besic_learing_testgn.Soft_Assertions@3043fe0e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='besic_learing_testgn.Data_provider.DataMatrix()'><b>DataMatrix</b><br>Test class: besic_learing_testgn.Data_provider<br>Parameters: Username, Password, 98765, Chrome</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.Data_provider@52feb982</td></tr>
+<tr>
+<td title='besic_learing_testgn.Data_provider.DataMatrix()'><b>DataMatrix</b><br>Test class: besic_learing_testgn.Data_provider<br>Parameters: Username1, Password1, 90102, Mozilla</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.Data_provider@52feb982</td></tr>
+<tr>
+<td title='besic_learing_testgn.Data_provider.DataMatrix()'><b>DataMatrix</b><br>Test class: besic_learing_testgn.Data_provider<br>Parameters: Username2, Password2, 88778, Safari</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.Data_provider@52feb982</td></tr>
+<tr>
+<td title='besic_learing_testgn.Assertions.High()'><b>High</b><br>Test class: besic_learing_testgn.Assertions</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.Assertions@34c4973</td></tr>
+<tr>
+<td title='besic_learing_testgn.Priority_Enabled.Home_Page()'><b>Home_Page</b><br>Test class: besic_learing_testgn.Priority_Enabled</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.Priority_Enabled@76b0bfab</td></tr>
+<tr>
+<td title='besic_learing_testgn.ITest_Context.Logic()'><b>Logic</b><br>Test class: besic_learing_testgn.ITest_Context<br>Parameters: org.testng.TestRunner@495b0487</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.ITest_Context@7a765367</td></tr>
+<tr>
+<td title='besic_learing_testgn.Assertions.Low()'><b>Low</b><br>Test class: besic_learing_testgn.Assertions</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.Assertions@34c4973</td></tr>
+<tr>
+<td title='besic_learing_testgn.Alwaysrun.Ready()'><b>Ready</b><br>Test class: besic_learing_testgn.Alwaysrun</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.Alwaysrun@33c7e1bb</td></tr>
+<tr>
+<td title='besic_learing_testgn.Priority_Enabled.Register_User()'><b>Register_User</b><br>Test class: besic_learing_testgn.Priority_Enabled</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.Priority_Enabled@76b0bfab</td></tr>
+<tr>
+<td title='besic_learing_testgn.Dependencies_ex.ReturnToHome()'><b>ReturnToHome</b><br>Test class: besic_learing_testgn.Dependencies_ex</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.Dependencies_ex@30a3107a</td></tr>
+<tr>
+<td title='besic_learing_testgn.ITest_Context.SetUp()'><b>SetUp</b><br>Test class: besic_learing_testgn.ITest_Context<br>Parameters: org.testng.TestRunner@495b0487</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.ITest_Context@7a765367</td></tr>
+<tr>
+<td title='besic_learing_testgn.Alwaysrun.Steady()'><b>Steady</b><br>Test class: besic_learing_testgn.Alwaysrun</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.Alwaysrun@33c7e1bb</td></tr>
+<tr>
+<td title='besic_learing_testgn.Priority_Enabled.User_LogOut()'><b>User_LogOut</b><br>Test class: besic_learing_testgn.Priority_Enabled</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.Priority_Enabled@76b0bfab</td></tr>
+<tr>
+<td title='besic_learing_testgn.Priority_Enabled.Valid_Login()'><b>Valid_Login</b><br>Test class: besic_learing_testgn.Priority_Enabled</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.Priority_Enabled@76b0bfab</td></tr>
+<tr>
+<td title='besic_learing_testgn.Dependencies_ex.calculater()'><b>calculater</b><br>Test class: besic_learing_testgn.Dependencies_ex</td>
+<td></td>
+<td>8</td>
+<td>besic_learing_testgn.Dependencies_ex@30a3107a</td></tr>
+<tr>
+<td title='besic_learing_testgn.ITest_Context.exit()'><b>exit</b><br>Test class: besic_learing_testgn.ITest_Context<br>Parameters: org.testng.TestRunner@495b0487</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.ITest_Context@7a765367</td></tr>
+<tr>
+<td title='besic_learing_testgn.Dependencies_ex.landing_page()'><b>landing_page</b><br>Test class: besic_learing_testgn.Dependencies_ex</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.Dependencies_ex@30a3107a</td></tr>
+<tr>
+<td title='besic_learing_testgn.TestGN_annotations.loginTest()'><b>loginTest</b><br>Test class: besic_learing_testgn.TestGN_annotations</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.TestGN_annotations@1563da5</td></tr>
+<tr>
+<td title='besic_learing_testgn.TestGN_annotations2_with2testcase.loginTest()'><b>loginTest</b><br>Test class: besic_learing_testgn.TestGN_annotations2_with2testcase</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.TestGN_annotations2_with2testcase@2bbf4b8b</td></tr>
+<tr>
+<td title='besic_learing_testgn.TestGN_annotations2_with2testcase.registerTest()'><b>registerTest</b><br>Test class: besic_learing_testgn.TestGN_annotations2_with2testcase</td>
+<td></td>
+<td>0</td>
+<td>besic_learing_testgn.TestGN_annotations2_with2testcase@2bbf4b8b</td></tr>
+<tr>
+<td title='besic_learing_testgn.Dependencies_ex.tearDown()'><b>tearDown</b><br>Test class: besic_learing_testgn.Dependencies_ex</td>
+<td></td>
+<td>1</td>
+<td>besic_learing_testgn.Dependencies_ex@30a3107a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='besic_learing_testgn.Alwaysrun.Go()'><b>Go</b><br>Test class: besic_learing_testgn.Alwaysrun</td>
+<td><div><pre>java.lang.Throwable: Method Alwaysrun.Go()[pri:4, instance:besic_learing_testgn.Alwaysrun@33c7e1bb] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace787361897", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace787361897'><pre>java.lang.Throwable: Method Alwaysrun.Go()[pri:4, instance:besic_learing_testgn.Alwaysrun@33c7e1bb] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>besic_learing_testgn.Alwaysrun@33c7e1bb</td></tr>
+</table><p>
+</body>
+</html>

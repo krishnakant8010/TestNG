@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parameterrazation_test_Suite]">
+  <test thread-count="5" name="Parameter_Test(failed)">
+    <parameter name="password" value="kant_9934"/>
+    <parameter name="url" value="https://outlook.live.com/owa/"/>
+    <parameter name="email" value="kantkrishna46@hotmail.com"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="besic_learing_testgn.Parameterization_TestNG">
+        <methods>
+          <include name="Hotmail" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- besic_learing_testgn.Parameterization_TestNG -->
+    </classes>
+  </test> <!-- Parameter_Test(failed) -->
+</suite> <!-- Failed suite [Parameterrazation_test_Suite] -->

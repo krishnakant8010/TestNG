@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Antthing_add_Suite]">
+  <test thread-count="5" name="test_Case(failed)">
+    <classes>
+      <class name="besic_learing_testgn.Alwaysrun">
+        <methods>
+          <include name="Steady"/>
+          <include name="Ready"/>
+          <include name="Go"/>
+          <include name="Begin"/>
+        </methods>
+      </class> <!-- besic_learing_testgn.Alwaysrun -->
+      <class name="besic_learing_testgn.Soft_Assertions">
+        <methods>
+          <include name="Validation"/>
+        </methods>
+      </class> <!-- besic_learing_testgn.Soft_Assertions -->
+      <class name="besic_learing_testgn.HartAssert_Vs_SoftAssert">
+        <methods>
+          <include name="HartAssertLogic"/>
+          <include name="SoftAssertLogic"/>
+        </methods>
+      </class> <!-- besic_learing_testgn.HartAssert_Vs_SoftAssert -->
+      <class name="besic_learing_testgn.Assertions">
+        <methods>
+          <include name="Criticals"/>
+          <include name="Medium"/>
+        </methods>
+      </class> <!-- besic_learing_testgn.Assertions -->
+    </classes>
+  </test> <!-- test_Case(failed) -->
+</suite> <!-- Failed suite [Antthing_add_Suite] -->

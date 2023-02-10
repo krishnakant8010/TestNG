@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteGroups">
+  <test  name="Test Groups">
+  <groups>
+  <run>
+  
+  <include name="unittest" />
+  <include name= "smoketest" />
+  <include name="UATTest" />
+  <exinclude name="regasstion" />
+    
+  </run>
+  </groups>
+    <classes>
+      <class name="GroupTestGN.HomePage"/>
+      <class name="GroupTestGN.LogOut"/>
+      <class name="GroupTestGN.Register"/>
+      <class name="GroupTestGN.Login"/>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteGroups]">
+  <test thread-count="5" name="Test Groups(failed)">
+    <groups>
+      <run>
+        <include name="unittest"/>
+        <include name="smoketest"/>
+        <include name="UATTest"/>
+        <include name="regasstion"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="GroupTestGN.Register">
+        <methods>
+          <include name="RegisteUser"/>
+          <include name="validRegisterUser"/>
+        </methods>
+      </class> <!-- GroupTestGN.Register -->
+    </classes>
+  </test> <!-- Test Groups(failed) -->
+</suite> <!-- Failed suite [SuiteGroups] -->
